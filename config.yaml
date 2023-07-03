@@ -3,7 +3,7 @@ credentials:
     saad:
       email: saadelhidaoui@gmail.com
       name: Saad Elhidaoui
-      password: '123'
+      password: '$2b$12$Y6bSqzaLXou0./7jRPgm2eIbDNgr7UU62nbAxKTSGtoYEl4ih8nHi'
 cookie:
   expiry_days: 30
   key: random_signature_key
