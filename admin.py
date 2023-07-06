@@ -24,7 +24,7 @@ name, authentication_status, username = authenticator.login('Login', 'main')
 
 if authentication_status:
     authenticator.logout('Logout', 'main')
-    x = requests.get('https://amineeddamir.pythonanywhere.com/get_detections ')
+    x = requests.get('https://amineeddamir.pythonanywhere.com/get_detections')
     df = pd.read_json(x.text)
 
     # df["city"] = df['city'].apply(lambda x: re.sub('[^A-Za-z0-9]+', '', x) if x is not None else x)
