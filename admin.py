@@ -46,9 +46,9 @@ if authentication_status:
         df2 = df2[df2['city'].isin(city_filter)]
 
     # date filter
-    df2.date = df2.date.map(lambda x: x.date())
-    date_filter = st.date_input('Date Filter', [df2['date'].min(), df2['date'].max()])
-    df2 = df2[(df2['date'] >= date_filter[0]) & (df2['date'] <= date_filter[1])]
+    #df2.date = df2.date.map(lambda x: x.date())
+    #date_filter = st.date_input('Date Filter', [df2['date'].min(), df2['date'].max()])
+    #df2 = df2[(df2['date'] >= date_filter[0]) & (df2['date'] <= date_filter[1])]
 
     st.map(df2)
     
